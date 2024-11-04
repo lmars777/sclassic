@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSkype - Classic Skype on Mac or Windows. Linux.</title>
+    <link rel="icon" type="image/x-icon" href="http://kskype.limpe.fun/ico/favicon.ico">
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="KSkype - Classic Skype on Mac or Windows. Linux.">
+    <meta property="og:description" content="Classic Skype in 2024 - KSkype!">
+    <meta property="og:image" content="http://kskype.limpe.fun/assets/v1/tab/imagetab.gif">
+    <meta property="og:url" content="http://kskype.limpe.fun">
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KSkype - Classic Skype on Mac or Windows. Linux.">
+    <meta name="twitter:description" content="Classic Skype in 2024 - KSkype!">
+    <meta name="twitter:image" content="http://kskype.limpe.fun/assets/v1/tab/imagetab.gif">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .redirect-message {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .banner {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            var userAgent = navigator.userAgent;
+            var redirectUrl;
+
+          
+            function isLegacyBrowser() {
+                var isIE = /MSIE|Trident/.test(userAgent);
+                var isOldChrome = /Chrome\/([0-9]+)/.test(userAgent) && parseInt(RegExp.$1, 10) <= 20;
+                var isOldFirefox = /Firefox\/([0-9]+)/.test(userAgent) && parseInt(RegExp.$1, 10) <= 20;
+                return isIE || isOldChrome || isOldFirefox;
+            }
+
+            if (isLegacyBrowser()) {
+                if (userLang.startsWith('ru')) {
+                    redirectUrl = 'https://lmars777.github.io/sclassic/ru/homepage';
+                } else {
+                    redirectUrl = 'https://lmars777.github.io/sclassic/ru/homepage';
+                }
+            } else {
+                if (userLang.startsWith('ru')) {
+                    redirectUrl = 'https://lmars777.github.io/sclassic/ru/homepage';
+                } else if (userLang.startsWith('uk')) {
+                    redirectUrl = 'https://lmars777.github.io/sclassic/ru/homepage';
+                } else {
+                    redirectUrl = 'https://lmars777.github.io/sclassic/ru/homepage';
+                }
+            }
+
+            fetch('https://kskype.limpe.fun/assets/v1/load')
+                .then(response => response.text())
+                .then(data => {
+                    document.body.innerHTML = data;
+                    
+                    window.location.href = redirectUrl;
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        });
+    </script>
+</head>
+<
+
+</html>
