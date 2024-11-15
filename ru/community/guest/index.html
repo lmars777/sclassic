@@ -3,51 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Целостная страница</title>
+    <title>Видео</title>
     <style>
-        body {
+        body, html {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        #header, #footer {
             width: 100%;
+            height: 100%;
             overflow: hidden;
         }
-        #content {
-            width: 904px;
-            margin: 0 auto;
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
+                event.preventDefault();
+            }
+        });
+
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        setInterval(function() {
+            if (window.outerHeight - window.innerHeight > 100 || window.outerWidth - window.innerWidth > 100) {
+                document.body.innerHTML = '<h1>DevTools запрещены</h1>';
+            }
+        }, 1000);
+    </script>
 </head>
 <body>
-    <div id="header"></div>
-    <div id="content"></div>
-    <div id="footer"></div>
-
-    <script>
-        async function fetchContent(url) {
-            const response = await fetch(url);
-            const text = await response.text();
-            return text;
-        }
-
-        async function loadContent() {
-            const headerContent = await fetchContent('frame/index.html');
-            const contentContent = await fetchContent('https://ventl.ru/skypeclassic/');
-            const footerContent = await fetchContent('frame/fi-q.htm');
-
-            document.getElementById('header').innerHTML = headerContent;
-            document.getElementById('content').innerHTML = contentContent;
-            document.getElementById('footer').innerHTML = footerContent;
-
-            // Открытие всех ссылок в новой вкладке
-            document.querySelectorAll('a').forEach(link => {
-                link.setAttribute('target', '_blank');
-            });
-        }
-
-        loadContent();
-    </script>
+    <iframe src="https://net.limpe.fun/video.php"></iframe>
 </body>
 </html>
