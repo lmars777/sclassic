@@ -9,6 +9,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-family: inherit;
 	vertical-align: baseline;
 	background: transparent;
+	display: center;
 }
 :focus {
 	outline: 0;
@@ -170,8 +171,9 @@ div.clearLineRight {
 
 /* Grid for pages with a sidebar: 700 content + 240 sideabar */
 #container.sidebar {
-	background: url(../images/sidebar_end.png) no-repeat 689px bottom;
+	/* background: url(../images/sidebar_end.png) no-repeat 689px bottom; */
 	margin-bottom: 30px;
+	/* display: none; */
 }
 #container #content {
 	padding: 0;
@@ -192,13 +194,14 @@ div.default {
 }
 #container.sidebar #content {
 	width: 720px;
-	float: left;
-	background: url(../images/sidebar_begin.png) no-repeat 689px top;
+	/* float: left; */
+	/* background: url(../images/sidebar_begin.png) no-repeat 689px top; */
 	padding: 0;
 }
 #container.sidebar #sidebar {
 	width: 240px;
 	float: right;
+	display: none;
 }
 #content #paddedContent { /* So we can have backgrounds outside the 20px left margin */
 	padding: 0 30px 0 0;  /* was 0 30px 0 10px before */
@@ -848,6 +851,7 @@ span.buttonSmall a.blue:hover span {
 span.buttonSmall a.blue.skypeCredit {
     padding: 0 0 0 32px;
     background: #42B2F5 url(/web/20110723194811im_/http://www.skypeassets.com/i/images/buttons/blue/blue_small_comp_credit_left.png) left top no-repeat;
+    display: none;
 }
 span.buttonSmall a.blue.skypeCredit:hover {
     padding: 0 0 0 32px;
@@ -6266,23 +6270,3 @@ div.helpBubble {
 				font-size: 14px;
 				border: 1px solid #98dff9;
 			}
-/*
-     FILE ARCHIVED ON 19:48:11 Jul 23, 2011 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 11:28:14 Nov 15, 2024.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.537
-  exclusion.robots: 0.018
-  exclusion.robots.policy: 0.01
-  esindex: 0.014
-  cdx.remote: 8.43
-  LoadShardBlock: 150.871 (3)
-  PetaboxLoader3.datanode: 117.811 (4)
-  PetaboxLoader3.resolve: 195.738 (2)
-  load_resource: 167.648
-*/
