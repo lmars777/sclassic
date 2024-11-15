@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Основные теги Open Graph -->
+	<meta property="og:title" content="FAQ | Skype Classic Portal" />
+	<meta property="og:description" content="Skype Classic Internet Portal" />
+	<meta property="og:image" content="https://kskype.limpe.fun/assets/v1/tab/sclassic.jpg" />
+	<meta property="og:url" content="https://skypeclassic.limpe.fun" />
+	<meta property="og:type" content="website" />
+  
+	<!-- Дополнительные теги для Opera -->
+	<meta name="opera:title" content="Название вашего сайта" />
+	<meta name="opera:description" content="Краткое описание вашего сайта" />
+	<meta name="opera:image" content="https://kskype.limpe.fun/assets/v1/tab/sclassic.jpg" />
+  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+    <script type="text/javascript">
+        // Функция для определения языка браузера
+        function getLanguage() {
+            var lang = navigator.language || navigator.userLanguage;
+            return lang.substring(0, 2);
+        }
+
+        // Редирект в зависимости от языка
+        function redirectBasedOnLanguage() {
+            var lang = getLanguage();
+            var baseUrl = 'https://skypeclassic.limpe.fun/';
+            var redirectUrl = baseUrl + (lang === 'ru' ? 'ru' : 'en') + '/community/guest';
+            window.location.href = redirectUrl;
+        }
+
+        // Выполнение редиректа при загрузке страницы
+        window.onload = redirectBasedOnLanguage;
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
