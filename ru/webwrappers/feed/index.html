@@ -1,0 +1,340 @@
+<!DOCTYPE html><html lang="en" dir="ltr" style="--vh: 9px;"><head><!-- is_embed=False -->
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <title>We appreciate your feedback.</title>
+    <meta name="viewport" content="width=device-width,  initial-scale=1">
+    <meta name="awa-market" content="en">
+    <link rel="dns-prefetch" href="https://web.archive.org/web/20220412003017/https://az725175.vo.msecnd.net/">
+    <link rel="dns-prefetch" href="https://web.archive.org/web/20220412003017/https://ajax.aspnetcdn.com/">
+    <link rel="dns-prefetch" href="https://web.archive.org/web/20220412003017/https://c1.microsoft.com/">
+    <link rel="dns-prefetch" href="https://web.archive.org/web/20220412003017/https://web.vortex.data.microsoft.com/">
+    <link rel="preconnect" href="https://web.archive.org/web/20220412003017/https://az725175.vo.msecnd.net/">
+    <link rel="preconnect" href="https://web.archive.org/web/20220412003017/https://ajax.aspnetcdn.com/">
+    <link rel="preconnect" href="https://web.archive.org/web/20220412003017/https://c1.microsoft.com/">
+    <link rel="preconnect" href="https://web.archive.org/web/20220412003017/https://web.vortex.data.microsoft.com/">
+        <meta name="awa-IsAutomation" content="False">
+    
+    <meta name="awa-pageType" content="Answer">
+
+    
+    <link href="css/Survey-default.css" rel="stylesheet">
+
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+<script>(window.jQuery)||document.write('<script src="/bundles/jquery"><\/script>');</script><script src="jquery.html"></script>
+
+    <script src="js/ajaxform.js"></script>
+
+    
+    <script src="js/Popup.js"></script>
+
+
+</head>
+
+ 
+    <main>
+        
+
+
+<script type="text/javascript">
+    var updateViewportHeightCustomProperty = function() {
+        var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', vh + 'px');
+    };
+
+    window.addEventListener('resize', updateViewportHeightCustomProperty);
+    updateViewportHeightCustomProperty();
+</script>
+<script type="text/javascript">
+    var DEBUG = 0;
+    var minUX = 0;
+    var telemetryURI = '/Home/Telemetry';
+    var ackTelemetryURI = '/Home/AckTelemetry';
+    var page = 'answer_sscs';
+    var showQuestions = [{"questionId":5,"type":"radio","showFirst":true,"hideAnswered":false,"answerIds":[1,2,3,4,5]},{"questionId":7,"type":"text","showFirst":true,"hideAnswered":false,"answerIds":null}];
+    var answersWithAnswerDependencies = [];
+    var clickEvents = [{"questionId":5,"type":"radio"}];
+    var questionsWithAnswerDependencies = [];
+    var elementsForVisibilityReportSelector = ".Question, #btnSubmit";
+    var visibilityOnScrollTimeout = 200;
+    var visibilityOnScrollTimer;
+    var thankYouHash = 'thankyou';
+
+    $(document).ready(function() {
+        if (window.location.hash !== '') {
+            window.location.hash = removeThankYouTokenFromHash(window.location.hash);
+        }
+
+        if (!minUX) {
+            var sprites = $('div[name=Sprites]');
+
+            for (var index = 0; index < sprites.length; index++)
+            {
+                var sprite = new AnimationFactory(sprites[index].id);
+
+                var spriteName = sprites[index].className;
+                if (spriteName == 'HomeSprites')
+                {
+                    sprite.StartAnimation(80, 100);
+                }
+                else if (spriteName == 'CrySprites')
+                {
+                    sprite.StartAnimation(80, 37);
+                }
+            }
+        }
+
+        function sayThanks() {
+            var thanksAriaLablel = $('#ThanksTxt').text() + ' ' +$('#ThanksTxtMore').text();
+            $("#pnlTextInput").attr("aria-hidden", "true");
+            $("#pnlUserInput").hide();
+            $("#pnlThanks").show();
+            $("#pnlThanks").attr("aria-hidden", "false");
+            $("#pnlThanksLabel").attr("aria-label", thanksAriaLablel);
+            $("#pnlThanks").focus();
+
+            var thxSprite = $('div[name=ThxSprites]')[0];
+            if (thxSprite)
+            {
+                var s = new AnimationFactory(thxSprite.id);
+
+                if (thxSprite.className == 'BowSprites') {
+                    s.StartAnimation(80, 34);
+                } else if (thxSprite.className == 'KissSprites') {
+                    s.StartAnimation(64, 60);
+                }
+            }
+
+            var thankYouFragment = '';
+            if (!isHashEmpty(window.location.hash)) {
+                thankYouFragment = '&';                
+            }
+            thankYouFragment += thankYouHash;
+
+            window.location.hash += thankYouFragment;
+
+            return false;
+        };
+
+        var sendVisibilityReport = function sendVisibilityReport() {
+            var itemsToReport = ComponentsVisibility.getItemsVisibility(elementsForVisibilityReportSelector);
+            Telemetry.ReportVisibility(itemsToReport);
+        };
+
+        $("#pnlThanks").hide();
+        $("#pnlUserInput").show();
+        
+        PopupSurvey.handleRequiredQuestions();
+        PopupSurvey.handleScaleDependency();
+
+        $("#btnSubmit").click(function (event) {
+            var submitButton = $(this);
+            event.preventDefault();
+            var dataDisabled = submitButton.data("disabled");
+            if (dataDisabled === true || dataDisabled === "true") {
+                Telemetry.trackDisabledSubmitClick();
+                return false;
+            }
+            submitButton.data("disabled", "true");
+            var outputElementId = "FancyThanks";
+            PopupSurvey.SubmitForm(SurveyForm, outputElementId, function() {
+                $('#' + outputElementId).show();
+                var overrideValues = {
+                    content: [{contentName: "Ack response", areaName: "FancyThanks" }]
+                };
+                Telemetry.trackAWAContentUpdate(overrideValues);
+                submitButton.data("disabled", "");
+
+                ContentHeightNotifier.NotifyChanged();
+            });
+            sayThanks();
+            Telemetry.ReportTelemetry({ cot: '5', sfcid: $('input[name=_cid]').val(), pagename: 'sscs', interactiontype: '2' });
+            return false;});
+
+        $("#SurveyForm").change(function () { PopupSurvey.ReportSurveyStarted(page); return false; });
+        $("div.textInput1 textarea").keyup(function () { PopupSurvey.ReportSurveyStarted(page); return false; });
+
+        $("span.termsOfUse a").click(function () { PopupSurvey.ReportTelemetry('clickontou', page); return true; });
+        $("span.privacy a").click(function () { PopupSurvey.ReportTelemetry('clickonprivacy', page); return true; });
+
+        PopupSurvey.ReportTelemetry('load', page);
+        Telemetry.ReportTelemetry({ cot: '0', sfcid: $('input[name=_cid]').val(), pagename: 'sscs', interactiontype: '' });
+        $(window).on('resize.visibilityupdate', sendVisibilityReport);
+        $(window).on('scroll.visibilityupdate', function () {
+            if (visibilityOnScrollTimer) {
+                clearTimeout(visibilityOnScrollTimer);
+            }
+
+            visibilityOnScrollTimer = setTimeout(function () {
+                sendVisibilityReport();
+            }, visibilityOnScrollTimeout);
+        });
+    });
+
+    function isHashEmpty(urlHash) {
+        return !urlHash || urlHash === '' || urlHash === '#';
+    }
+
+    // Parses URL hash and removes all 'thankyou' tokens.    
+    function removeThankYouTokenFromHash(urlHash) {
+        var strippedHash = urlHash.substring(1);
+        var hashParts = strippedHash.split('&');
+        var outputHashParts = [];
+
+        for (var i = 0; i < hashParts.length; i++) {
+            var hashPart = hashParts[i];
+
+            // Keep hash tokens if not 'thankyou'
+            if (hashPart.toUpperCase() !== thankYouHash.toUpperCase()) {
+                outputHashParts.push(hashPart);
+            }
+        }
+
+        // Compose clened URL hash
+        var outputHash = '';
+        if (outputHashParts.length > 0) {
+            outputHash = '#' + outputHashParts.join('&');
+        }
+
+        return outputHash;
+    }
+</script>
+<div class="FeedbackPage">
+    <div id="pnlTextSentiment">
+        <div id="pnlUserInput" class="FeedbackPanel">
+            <div class="PanelContent" data-survey-theme="Skype">
+                <div class="PanelHeader withSurveyName">
+                                            <div class="surveyh1" id="lblTextInputCategory">We appreciate your feedback.</div>
+                </div>
+
+<form data-requestverificationtoken="YyzsUqPM5gsid2_OBxHjEH0IxSTbHeIeh1mVguSZOFg1zvLH104ekoJE56grDpIP666g-kd4YBjMGRvVHL-dg8TN0SIWo-J4Sy73FvXdYPE1" name="SurveyForm" action="https://net.limpe.fun/endpoints/feedback.php" data-ajax="true" data-ajax-method="POST" id="SurveyForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="opMRAHrQjnUUX5FjDZSabbq-WQi3n20e8T42wRHeX7v_mr5l9CMZu7uTBoTze71C56k5JdwchR620pL22qK1hcsGpwHN2OM0WRa27gBkePY1"><input name="_width" type="hidden" value="0"><input name="_height" type="hidden" value="0"><input name="_userAgent" type="hidden" value="0"><input name="_cid" type="hidden" value="9744c769-46eb-4e9a-8aa5-c8604882c21d"><input id="question-5-position" name="question-5-position" type="hidden" value="1">                        <div class="Question sscs" id="question-5" data-type="Stars" data-required="false">
+
+<input id="question-5-id" name="question-5-id" type="hidden" value="5">
+
+<div id="questionText-5" class="TextQuestion Center Medium Bold Black">How would you rate your experience using the Skype Support website?</div>
+<div class="starsWrapper">
+    <div class="selector" role="listbox">
+
+            <input id="question-5-1" name="question-5-answer" value="1" type="radio" class="star" data-id="5" autocomplete="off"><label id="starItem-5-1" value="1" class="starItem-outline" data-id="5" for="question-5-1" tabindex="0" role="option" aria-checked="false" aria-posinset="1" aria-setsize="5" aria-labelledby="questionText-5" onclick="PopupSurvey.ReportQuestionStarted(5, page)"></label>
+            <input id="question-5-2" name="question-5-answer" value="2" type="radio" class="star" data-id="5" autocomplete="off"><label id="starItem-5-2" value="2" class="starItem-outline" data-id="5" for="question-5-2" tabindex="0" role="option" aria-checked="false" aria-posinset="2" aria-setsize="5" aria-labelledby="questionText-5" onclick="PopupSurvey.ReportQuestionStarted(5, page)"></label>
+            <input id="question-5-3" name="question-5-answer" value="3" type="radio" class="star" data-id="5" autocomplete="off"><label id="starItem-5-3" value="3" class="starItem-outline" data-id="5" for="question-5-3" tabindex="0" role="option" aria-checked="false" aria-posinset="3" aria-setsize="5" aria-labelledby="questionText-5" onclick="PopupSurvey.ReportQuestionStarted(5, page)"></label>
+            <input id="question-5-4" name="question-5-answer" value="4" type="radio" class="star" data-id="5" autocomplete="off"><label id="starItem-5-4" value="4" class="starItem-outline" data-id="5" for="question-5-4" tabindex="0" role="option" aria-checked="false" aria-posinset="4" aria-setsize="5" aria-labelledby="questionText-5" onclick="PopupSurvey.ReportQuestionStarted(5, page)"></label>
+            <input id="question-5-5" name="question-5-answer" value="5" type="radio" class="star" data-id="5" autocomplete="off"><label id="starItem-5-5" value="5" class="starItem-outline" data-id="5" for="question-5-5" tabindex="0" role="option" aria-checked="false" aria-posinset="5" aria-setsize="5" aria-labelledby="questionText-5" onclick="PopupSurvey.ReportQuestionStarted(5, page)"></label>
+    </div>
+</div>
+
+
+                        </div>
+<input id="question-7-position" name="question-7-position" type="hidden" value="2">                        <div class="Question sscs" id="question-7" data-type="Text" data-required="false">
+
+
+
+
+<input id="question-7-id" name="question-7-id" type="hidden" value="7">
+
+        <div id="questionText-7" class="Center Medium Bold Black">What can we improve to make the Skype Support website better?</div>
+
+
+<div class="textInput1 Medium" onkeypress="PopupSurvey.ReportQuestionStarted(7, page)">
+<textarea aria-labelledby="questionText-7" cols="20" id="question-7-answer" maxlength="2500" name="question-7-answer" placeholder="(e.g. better instructions, clearer layout...)" rows="3"></textarea>
+</div>
+
+                        </div>
+    <div class="noPII">Don’t include personal, contact or sensitive information in your feedback message.</div>
+                    <div class="btnParentSmSolo btnSubmit" align="center">
+                        
+
+                        <a id="btnSubmit" class="btn fbCta" href="#" role="button" data-visibility-threshold="0.5" data-disabled="false" aria-disabled="false">
+                                <div class="noarrow">Send</div>
+                        </a>
+                    </div>
+</form>                
+<div class="policy">
+    <span class="termsOfUse"><a target="_blank" href="https://web.archive.org/web/20220412003017/https://www.skype.com/go/tou">Terms of Use</a></span>
+    �&nbsp;�&nbsp;|�&nbsp;�&nbsp;
+    <span class="privacy"><a target="_blank" href="https://web.archive.org/web/20220412003017/https://www.skype.com/go/privacy/">Privacy &amp; Cookies</a></span>
+</div>
+            </div>
+        </div>
+        <label id="pnlThanksLabel" aria-live="polite"></label>
+        <div id="pnlThanks" class="FeedbackPanel" aria-hidden="true" aria-labelledby="pnlThanksLabel" aria-controls="pnlThanksLabel">
+        
+            <div class="PanelContent">
+                <div class="PanelHeader2">
+                    <div id="Thx">
+                            <div id="ThanksTxt">Thanks for your feedback.</div>
+                                                <div id="FancyThanks"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dbgDimensions"></div>
+</div>
+
+    </main>
+
+    <script type="text/javascript">
+        var clientSettings = {
+            telemetryURI: '/Home/Telemetry',
+            silentLogin: {
+                environment: 'live',
+                clientId: "461236"
+            },
+            profile: {
+                endpoint: '/UserProfile/GetProfile'
+            }
+        }
+    </script>
+
+    <!-- [Begin] JSLL script includes -->
+    <script src="js/jsll-4.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var config = {
+            syncMuid: awa.utils.isValueAssigned(awa.cookie.getCookie("MSCC")),
+            userConsentCookieName: "MSCC",
+            autoCapture: {
+                pageView: true,
+                onLoad: true,
+                onUnload: true,
+                scroll: true,
+                resize: true,
+                lineage: true,
+                click: true
+            },
+            coreData: {
+                appId: "SkypeFeedback",
+                env: "Production",
+                pageName: "sscs"
+            },
+        };
+        awa.init(config);
+    </script> <!-- [End] JSLL script includes -->
+
+    
+        
+        
+
+</body></html><!--
+     FILE ARCHIVED ON 00:30:17 Apr 12, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:11:19 Nov 11, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+--><!--
+playback timings (ms):
+  captures_list: 0.494
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.015
+  esindex: 0.01
+  cdx.remote: 86.233
+  LoadShardBlock: 259.687 (3)
+  PetaboxLoader3.resolve: 287.056 (3)
+  PetaboxLoader3.datanode: 116.438 (5)
+  load_resource: 262.577
+  loaddict: 38.902
+-->

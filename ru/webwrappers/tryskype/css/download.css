@@ -117,14 +117,14 @@ div#shotContainer {
 .downloadForm {
 	border-top: 1px solid #7fd7f7;
 	border-bottom: 1px solid #7fd7f7;
-	background: #e5f6fd url(/i/images/illustrations/download_blue.png) no-repeat 354px 0px;
+	background: #e5f6fd url(/web/20110104183958im_/http://www.skypeassets.com/i/images/illustrations/download_blue.png) no-repeat 354px 0px;
 	display: block;
 	padding: 14px 20px 20px 20px;
 	margin: 9px 0 17px 0;
 }
 
 .downloadForm.emailToolbar {
-	background: #e5f6fd url(/i/images/illustrations/download_blue.png) no-repeat 540px -37px;
+	background: #e5f6fd url(/web/20110104183958im_/http://www.skypeassets.com/i/images/illustrations/download_blue.png) no-repeat 540px -37px;
 }
 .officeToolbar {
 	background: #e5f6fd;
@@ -132,7 +132,7 @@ div#shotContainer {
 .chooseForm {
 	border-top: 1px solid #7fd7f7;
 	border-bottom: 1px solid #7fd7f7;
-	background: #e5f6fd url(/i/images/illustrations/download_blue.png) no-repeat 570px -18px;
+	background: #e5f6fd url(/web/20110104183958im_/http://www.skypeassets.com/i/images/illustrations/download_blue.png) no-repeat 570px -18px;
 	display: block;
 	padding: 14px 10px 20px 10px;
 	margin: 9px 0 17px 0;
@@ -151,26 +151,26 @@ div#shotContainer {
 	padding-top: 11px;
 }
 .downloadWindows {
-	background: url(/i/images/icons/download_windows.png) no-repeat top left;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_windows.png) no-repeat top left;
 }
 .downloadMac {
-	background: url(/i/images/icons/download_mac.png) no-repeat top left;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_mac.png) no-repeat top left;
 }
 .downloadLinux {
-	background: url(/i/images/icons/download_linux.png) no-repeat top left;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_linux.png) no-repeat top left;
 }
 .downloadMobile {
-	background: url(/i/images/icons/download_mobile.png) no-repeat top left;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_mobile.png) no-repeat top left;
 }
 .downloadEmailToolbar {
-	background: url(/i/images/icons/download_emailtoolbar.png) no-repeat 0 6px;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_emailtoolbar.png) no-repeat 0 6px;
 }
 .downloadOfficeToolbar {
-	background: url(/i/images/icons/download_officetoolbar.png) no-repeat 0 6px;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_officetoolbar.png) no-repeat 0 6px;
 	width: 280px;
 }
 .downloadPsp {
-	background: url(/i/images/icons/download_psp.png) no-repeat top left;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_psp.png) no-repeat top left;
 }
 .downloadForm h2 {
 	margin-top: 0;
@@ -263,35 +263,35 @@ div.chooseLinux ul li {
 }
 
 div.chooseLinux ul li#distroUbuntu {
-	background: url(/i/images/icons/download_ubuntu.png) left center no-repeat;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_ubuntu.png) left center no-repeat;
 }
 div.chooseLinux ul li#distroDebian {
-	background: url(/i/images/icons/download_debian.png) left center no-repeat;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_debian.png) left center no-repeat;
 }
 div.chooseLinux ul li#distroMepis {
-	background: url(/i/images/icons/download_mepis.png) left center no-repeat;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_mepis.png) left center no-repeat;
 }
 div.chooseLinux ul li#distroXandros {
-	background: url(/i/images/icons/download_xandros.png) left center no-repeat;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_xandros.png) left center no-repeat;
 }
 div.chooseLinux ul li#distroFedora {
 	padding-top: 0 !important;
 	padding-bottom: 1px !important;
-	background: url(/i/images/icons/download_fedora.png) left center no-repeat;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_fedora.png) left center no-repeat;
 }
 div.chooseLinux ul li#distroSuse {
-	background: url(/i/images/icons/download_suse.png) left center no-repeat;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_suse.png) left center no-repeat;
 }
 div.chooseLinux ul li#distroMandriva {
-	background: url(/i/images/icons/download_mandriva.png) left center no-repeat;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_mandriva.png) left center no-repeat;
 }
 div.chooseLinux ul li#distroDynSta {
 	padding-top: 0 !important;
 	padding-bottom: 10px !important;
-	background: url(/i/images/icons/download_stat-dyn.png) left center no-repeat;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_stat-dyn.png) left center no-repeat;
 }
 div.chooseLinux ul li#distroCentos {
-	background: url(/i/images/icons/download_centos.png) left center no-repeat;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_centos.png) left center no-repeat;
 }
 
 #pspWithHeadphones {
@@ -305,16 +305,16 @@ div.chooseLinux ul li#distroCentos {
 	/* width: 235px; */
 }
 li.bulletPsp {
-	 list-style-image: url(/i/images/bullets/psp_device.png);
+	 list-style-image: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/bullets/psp_device.png);
 }
 li.bulletHeadset {
-	 list-style-image: url(/i/images/bullets/headphones.png);
+	 list-style-image: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/bullets/headphones.png);
 }
 li.bulletWifi {
-	 list-style-image: url(/i/images/bullets/wifi.png);
+	 list-style-image: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/bullets/wifi.png);
 }
 li.bulletMemoryStick {
-	 list-style-image: url(/i/images/bullets/memory_stick.png);
+	 list-style-image: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/bullets/memory_stick.png);
 }
 
 img#soundQuality {
@@ -344,7 +344,7 @@ body.windowsMobile .clouds {
 
 
 div.bannerTitle {
-	background: #00aff0 url(/i/images/backgrounds/lightblue_to_skypeblue.png) repeat-x left top;
+	background: #00aff0 url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/lightblue_to_skypeblue.png) repeat-x left top;
 	width: 690px;
 	padding: 20px 0 0;
 	margin-bottom: 20px;
@@ -375,7 +375,7 @@ div.bannerTitle {
 	}
 
 div.downloadHeader {
-	background: #00aff0 url(/i/images/backgrounds/downloadheader_lightblue.png) no-repeat left top;
+	background: #00aff0 url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/downloadheader_lightblue.png) no-repeat left top;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	width: 690px;
@@ -389,7 +389,7 @@ div.downloadHeader {
 	}
 
 div.downloadSMS {
-	background: #00aff0 url(/i/images/backgrounds/lightblue_to_skypeblue.png) repeat-x left top;
+	background: #00aff0 url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/lightblue_to_skypeblue.png) repeat-x left top;
 	width: 690px;
 	padding: 30px 0 0;
 	position: relative;
@@ -414,16 +414,16 @@ div.contentDownload {
 }
 
 	div.downloadHeader.threesp {
-		background:#fff url(/i/images/backgrounds/threesp-blue-header-hero-tenright.png) no-repeat left top;
+		background:#fff url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/threesp-blue-header-hero-tenright.png) no-repeat left top;
 		margin-bottom:2em;
 	}
 
 	div.downloadHeader.macos {
-		background: #00aff0 url(/i/images/backgrounds/downloadheader_lightblue_mac.png) no-repeat left top;
+		background: #00aff0 url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/downloadheader_lightblue_mac.png) no-repeat left top;
 	}
 
 	div.downloadHeader.n900 {
-		background: #fff url(/i/images/backgrounds/downloadheader_lightblue_n900.png) no-repeat left top;
+		background: #fff url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/downloadheader_lightblue_n900.png) no-repeat left top;
 		margin-bottom: 2em;
 	}
 
@@ -587,18 +587,18 @@ div.contentDownload {
 	}
 	
 		div.downloadHeader .downloadOptions span.description.windows {
-			background: url(/i/images/icons/download_windows_small.png) no-repeat left top;
+			background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_windows_small.png) no-repeat left top;
 			padding-left: 30px;		
 		}
 		
 		div.downloadHeader .downloadOptions span.description.macosx {
-			background: url(/i/images/icons/download_mac_small.png) no-repeat left top;
+			background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_mac_small.png) no-repeat left top;
 			padding-left: 30px;
 			color: #636363;
 		}
 		
 		div.contentDownload .downloadOptions span.description.macosx {
-			background: url(/i/images/icons/download_mac_small_lightblue.png) no-repeat left top;
+			background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_mac_small_lightblue.png) no-repeat left top;
 			padding-left: 30px;
 			color: #636363;
 		}
@@ -701,14 +701,14 @@ div.bannerTitle span.rightPhone {
 			line-height: 18px;
 			padding: 3px 10px 3px 24px;
 			margin-bottom: 10px;
-			background: white url(/i/images/icons/download_pocketpc.png) no-repeat left top;
+			background: white url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_pocketpc.png) no-repeat left top;
 		}
 		div.bannerTitle .downloadOptions .smartphone h3 {
 			font-size: 18px;
 			line-height: 18px;
 			padding: 3px 10px 3px 22px;
 			margin-bottom: 10px;
-			background: white url(/i/images/icons/download_smartphone.png) no-repeat left top;
+			background: white url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/download_smartphone.png) no-repeat left top;
 		}
 	div.bannerTitle .downloadOptions .smartphone {
 		float: right;
@@ -799,22 +799,22 @@ ul.featureList li {
 	}
 
 	ul.featureList li.skypeOut {
-		background: url(/i/images/icons/landlines_24x24_white.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/landlines_24x24_white.png) top left no-repeat;
 	}
 	ul.featureList li.skypeIm {
-		background: url(/i/images/icons/chat_24x24_white.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/chat_24x24_white.png) top left no-repeat;
 	}
 	ul.featureList li.skypeCall {
-		background: url(/i/images/icons/call_24x24_white.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/call_24x24_white.png) top left no-repeat;
 	}
 	ul.featureList li.videoCall {
-		background: url(/i/images/icons/video_24x24_white.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/video_24x24_white.png) top left no-repeat;
 	}
 	ul.featureList li.voiceMail {
-		background: url(/i/images/icons/voicemail_24x24_white.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/voicemail_24x24_white.png) top left no-repeat;
 	}
 	ul.featureList li.callFwd {
-		background: url(/i/images/icons/callfwd_24x24_white.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/callfwd_24x24_white.png) top left no-repeat;
 	}
 
 	ul.newFeatureList li {
@@ -823,13 +823,13 @@ ul.featureList li {
 		list-style-type: none;
 	}
 	ul.newFeatureList li.soundQuality {
-		background: url(/i/images/illustrations/better_sound_quality_small.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/illustrations/better_sound_quality_small.png) top left no-repeat;
 	}
 	ul.newFeatureList li.sendFile {
-		background: url(/i/images/illustrations/better_sound_quality_small.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/illustrations/better_sound_quality_small.png) top left no-repeat;
 	}
 	ul.newFeatureList li.sendSMS {
-		background: url(/i/images/illustrations/better_sound_quality_small.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/illustrations/better_sound_quality_small.png) top left no-repeat;
 	}
 
 
@@ -925,7 +925,7 @@ table.phonesListWrapper {
 	}
 	
 	div.indexBlue .goVideo {
-		background:url(/i/images/backgrounds/gray_videobox_blue.png) no-repeat top left;
+		background:url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/gray_videobox_blue.png) no-repeat top left;
 		width: 341px;
 		height: 81px;
 		display: block;
@@ -948,7 +948,7 @@ table.phonesListWrapper {
 			font-weight: bold;
 			font-size: 14px;
 			color: #666666;
-			background: url(/i/images/misc/business_video_100.png) no-repeat 5px 5px;
+			background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/misc/business_video_100.png) no-repeat 5px 5px;
 		}
 
 		* html div.indexBlue .goVideo a {
@@ -981,7 +981,7 @@ table.phonesListWrapper {
 		}
 
 	#paddedContent .goVideo {
-		background: url(/i/images/backgrounds/gray_big_videobox_white.png) no-repeat top left;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/gray_big_videobox_white.png) no-repeat top left;
 		width: 204px;
 		margin: 0 19px 10px 30px;
 		min-height: 172px;
@@ -1000,7 +1000,7 @@ table.phonesListWrapper {
 
 		#paddedContent .goVideo .textBox {
 			padding: 2px 6px 7px;
-			background: url(/i/images/backgrounds/gray_big_videobox_bottom_white.png) no-repeat bottom left;
+			background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/gray_big_videobox_bottom_white.png) no-repeat bottom left;
 			min-height: 47px;
 		}
 		
@@ -1073,7 +1073,7 @@ img#n900Device {
 		}
 		 
 			 #screenShotViewer div.screenShotsRow a.selected {		 
-				 background: url(/i/images/misc/bottomarrow_lightblue.png) no-repeat center bottom;
+				 background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/misc/bottomarrow_lightblue.png) no-repeat center bottom;
 			 }
 		 
 		 #screenShotViewer div.screenShotViewerContainer {
@@ -1109,7 +1109,7 @@ img#n900Device {
 			#screenShotViewer div.screenShotViewerContainer .screenShotBig a.closeScreenShot {
 				float: right;
 				padding-right: 30px;
-				background: url(/i/images/buttons/close_button.png) no-repeat top right;
+				background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/buttons/close_button.png) no-repeat top right;
 				font-size: 12px;				
 				font-weight: bold;
 				line-height: 24px;
@@ -1131,7 +1131,7 @@ body.windowsMobile.lang-pt span.buttonSmall a.green span {
 
 /* windowsmmobile beta */
 div.bannerTitle .downloadContainer {
-	background: url(/i/images/illustrations/win_mobile_beta_01.png) 130px 61px no-repeat;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/illustrations/win_mobile_beta_01.png) 130px 61px no-repeat;
 	padding: 160px 0 10px 0;
 }
 
@@ -1175,13 +1175,13 @@ ul.betaFeatureList li {
 	list-style-type: none;
 }
 	ul.betaFeatureList li.sendFiles {
-		background: url(/i/images/icons/win_mobile_beta_features_01.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/win_mobile_beta_features_01.png) top left no-repeat;
 	}
 	ul.betaFeatureList li.sendSMS {
-		background: url(/i/images/icons/win_mobile_beta_features_02.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/win_mobile_beta_features_02.png) top left no-repeat;
 	}
 	ul.betaFeatureList li.skypePanel {
-		background: url(/i/images/icons/win_mobile_beta_features_03.png) top left no-repeat;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/win_mobile_beta_features_03.png) top left no-repeat;
 	}
 body.windowsMobile #content #paddedContent span.buttonSmall a.green span.smallFont {
 	font-size: 0.9em;
@@ -1199,7 +1199,7 @@ body.windowsMobile #content #paddedContent .downloadNote.smallFont {
 
 /* windows business */
 #content.business .pageHeader {
-	background: url(/i/images/backgrounds/business/windows_download_header.png) no-repeat top left;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/business/windows_download_header.png) no-repeat top left;
 	height: 375px;
 	width: 700px;
 	text-align: center;
@@ -1238,7 +1238,7 @@ body.windowsMobile #content #paddedContent .downloadNote.smallFont {
 	#content.business .pageHeader .downloadButton a {
 		display: block;
 		padding: 4px 0px 4px 0px;
-		background: #fff url(/i/images/buttons/simple/white_large.png) repeat-x left 0px;
+		background: #fff url(/web/20110104183958im_/http://www.skypeassets.com/i/images/buttons/simple/white_large.png) repeat-x left 0px;
 		color: #4B465A;
 		font-family: Arial, sans-serif;
 		font-size: 1.286em;
@@ -1251,7 +1251,7 @@ body.windowsMobile #content #paddedContent .downloadNote.smallFont {
 		border-radius: 2px;
 	}
 	#content.business .pageHeader .downloadButton a:hover {
-		background: #fff url(/i/images/buttons/simple/white_large.png) repeat-x left -36px;
+		background: #fff url(/web/20110104183958im_/http://www.skypeassets.com/i/images/buttons/simple/white_large.png) repeat-x left -36px;
 	}
 		#content.business .pageHeader .downloadButton a img {
 			margin: 0 5px -5px 0;
@@ -1286,7 +1286,7 @@ body.windowsMobile #content #paddedContent .downloadNote.smallFont {
 			width: 335px;
 		}
 			#content.business .twoColumns .rightColumn.business {
-				background: #EBEBEB url(/i/images/backgrounds/business/windows_download_grey_content.png) no-repeat right bottom;
+				background: #EBEBEB url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/business/windows_download_grey_content.png) no-repeat right bottom;
 				-moz-border-radius: 3px;
 				-webkit-border-radius: 3px;
 				margin-top: 16px;
@@ -1366,7 +1366,7 @@ body.windowsMobile #content #paddedContent .downloadNote.smallFont {
 		display: block;
 		padding: 4px 0px 4px 0px;
 
-		background: url(/i/images/buttons/simple/purple_large.png) repeat-x left 0px;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/buttons/simple/purple_large.png) repeat-x left 0px;
 
 		color: #ffffff;
 		font-family: Arial, sans-serif;
@@ -1380,7 +1380,7 @@ body.windowsMobile #content #paddedContent .downloadNote.smallFont {
 		-webkit-border-radius: 2px;
 	}
 	.upsellBlock .downloadButton a:hover {
-		background: url(/i/images/buttons/simple/purple_large.png) repeat-x left -36px;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/buttons/simple/purple_large.png) repeat-x left -36px;
 	}
 		.upsellBlock .downloadButton a img {
 			margin: 0 5px -5px 0;
@@ -1400,15 +1400,15 @@ body.windowsMobile #content #paddedContent .downloadNote.smallFont {
 	color: #00aff0;
 }
 	#content h2.blue.head1 {
-		background: url(/i/images/misc/win_41_gold_headline_1.png) no-repeat 0px top;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/misc/win_41_gold_headline_1.png) no-repeat 0px top;
 		padding-top: 12px;
 	}
 	#content h2.blue.head2 {
-		background: url(/i/images/misc/win_41_gold_headline_2.png) no-repeat 0px top;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/misc/win_41_gold_headline_2.png) no-repeat 0px top;
 		padding-top: 17px;
 	}
 	#content h2.blue.head3 {
-		background: url(/i/images/misc/win_41_gold_headline_3.png) no-repeat 0px top;
+		background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/misc/win_41_gold_headline_3.png) no-repeat 0px top;
 	}
 #content ul.splitList {
 	width: 325px;
@@ -1425,7 +1425,7 @@ p#skypeOnlineIcon {
  padding-top: 8px;
  position: relative;
  left: 45px;
- background: url(/i/images/icons/skypeon3_online_40x40_white.png) no-repeat 205px;
+ background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/skypeon3_online_40x40_white.png) no-repeat 205px;
 }
 div.splitContent {
 	height: 100%;
@@ -1529,15 +1529,15 @@ div#contentHeader {
 }
 	
 div#contentHeader .middleContent {
-	background: #03b0f0 url(/i/images/backgrounds/download_bg.png) no-repeat bottom left;
+	background: #03b0f0 url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/download_bg.png) no-repeat bottom left;
 }
 
 div#contentHeader .middleContent.rtl {
-	background: #03b0f0 url(/i/images/backgrounds/download_bg_rtl.png) no-repeat bottom left;
+	background: #03b0f0 url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/download_bg_rtl.png) no-repeat bottom left;
 }
 
 div#contentHeader .registeredUser {
-	background: #00aff0 url(/i/images/backgrounds/download_bg_2.png) no-repeat bottom right;
+	background: #00aff0 url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/download_bg_2.png) no-repeat bottom right;
 }
 	div#contentHeader .registeredUser a.buttonSimpleMedium {
 		margin-left: 38px;
@@ -1572,7 +1572,7 @@ div#contentHeader .registeredUser {
 	div#helpSteps .helpStep img{
 		margin-bottom: 15px;
 		padding: 6px;
-		background: #ebebeb url(/i/images/backgrounds/download_helpstep_bg.png) repeat-x; 
+		background: #ebebeb url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/download_helpstep_bg.png) repeat-x; 
 		-webkit-border-radius: 4px;
 		-moz-border-radius: 4px;
 		border-radius: 4px;		
@@ -1596,7 +1596,7 @@ div#contentHeader .registeredUser {
 	clear: both;
 	padding-left: 50px !important;
 	height: 40px;
-	background: url(/i/images/icons/noemergency.png) no-repeat 0 5px;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/icons/noemergency.png) no-repeat 0 5px;
 	margin-left: 20px;
 	}	
 	
@@ -1633,7 +1633,7 @@ div#selectCountry p {
 		min-height: 122px;
 		height: auto !important;
 		height: 122px;
-		background: white url(/i/images/illustrations/call-people.png) no-repeat bottom right;
+		background: white url(/web/20110104183958im_/http://www.skypeassets.com/i/images/illustrations/call-people.png) no-repeat bottom right;
 		padding-right: 240px;
 		}
 		
@@ -1796,7 +1796,7 @@ div.quickFilter {
 	margin-top: 10px;
 }
 .ratesArea div#homeRateSelector.quickFilter {
-	background: url(/i/images/backgrounds/quickfilter_bg.gif) no-repeat 0 0;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/quickfilter_bg.gif) no-repeat 0 0;
 	border: 0;
 	height: 32px;
 	margin-top: 0px;
@@ -1817,7 +1817,7 @@ div.quickFilter {
 .dynamicRatesWithSidebar {
 	height: 100%;
 	overflow: hidden;
-	background: url(/i/images/backgrounds/download_side_seperator.png) no-repeat 660px bottom;
+	background: url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/download_side_seperator.png) no-repeat 660px bottom;
 	padding-bottom: 30px;
 	margin-bottom: 5px;
 }
@@ -1914,7 +1914,7 @@ div.paymentOptionCell a {
 	min-height: 375px;
 	height: auto !important;
 	height: 375px;
-	background: white url(/i/images/backgrounds/download_side_seperator.png) no-repeat top left;
+	background: white url(/web/20110104183958im_/http://www.skypeassets.com/i/images/backgrounds/download_side_seperator.png) no-repeat top left;
 	}	
 
 	
@@ -1990,7 +1990,7 @@ div#horSeperator {
 	display: block;
 	width: 921px;
 	height: 36px;
-	background: white url(/i/images/illustrations/download_horiz_separator.png) no-repeat 0px 0px;
+	background: white url(/web/20110104183958im_/http://www.skypeassets.com/i/images/illustrations/download_horiz_seperator.png) no-repeat 0px 0px;
 	margin-bottom: 15px;
 	margin-left: 20px;
 }
@@ -2000,3 +2000,24 @@ div#horSeperator {
 #content #paddedContent #selectCountry .lowerCell .paymentOptionCell p {
 	padding-left: 0px;
 }
+
+/*
+     FILE ARCHIVED ON 18:39:58 Jan 04, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:35:27 Nov 08, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.885
+  exclusion.robots: 0.057
+  exclusion.robots.policy: 0.025
+  esindex: 0.013
+  cdx.remote: 6.369
+  LoadShardBlock: 101.597 (3)
+  PetaboxLoader3.datanode: 152.047 (5)
+  PetaboxLoader3.resolve: 99.052 (3)
+  load_resource: 215.205 (2)
+*/
